@@ -19,7 +19,7 @@ fn main() -> std::io::Result<()> {
     let mut f = File::create(args.file_name)?;
     let mut s: String = String::new();
 
-    s.push_str(&format!("#N canvas 382 105 757 524 10;\n"));
+    s.push_str(&format!("#N canvas 100 100 400 300 10;\n"));
 
     while i < args.number_of_tables {
         s.push_str(&format!("#X obj {} {} table \\$0-{}-l;\n", x, y, i));
