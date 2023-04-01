@@ -5,7 +5,7 @@ use std::{fs::File, io::Write};
 #[command(author, version, about, long_about = None)]
 struct Args {
     #[arg(short, long)]
-    number_of_tables: u32,
+    number_of_tables: u16,
     #[arg(short, long)]
     file_name: String,
 }
